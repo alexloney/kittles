@@ -1,0 +1,12 @@
+{
+  "name": "Kittles",
+  "description": "A personal website for Kittles",
+  "url": "https://kittles.neocities.org",
+  "nav": [
+    { "label": "Home", "url": "/" },
+    { "label": "Lifestory", "url": "/lifestory" },
+    { "label": "Photos", "url": "/photos" },
+    { "label": "Art and Tributes", "url": "/art-and-tributes" },
+    { "label": "Etc", "url": "/etc" }
+  ]
+}
