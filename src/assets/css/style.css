@@ -29,7 +29,7 @@ body{
 
 .header{
     flex-basis: 100%;
-    background-image: url("../img/header.png");
+    background-image: url("/assets/img/header.png");
     background-position: bottom left;
     background-repeat: no-repeat;
     display: flex;

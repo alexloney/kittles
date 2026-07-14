@@ -4,8 +4,11 @@
 
 ### Required
 1. Download/install [Node.js](https://nodejs.org/en/download/current). It's easiest just to use the "Windows Installer (.msi)" button
-2. Open a command-prompt and run the following command:
-   ```
+2. Clone (or download) this repository
+3. Open a command-prompt inside of this repository
+   * If you're using VS Code, you can do that by simply going to View -> Terminal
+4. Run the following command from the project root:
+   ```bash
    npm install
    ```
 
@@ -17,13 +20,13 @@
 
 ### Testing locally
 You can run/host the website locally to develop/test with, before pushing changes to Neocities with the following command:
-```
+```bash
 npm start
 ```
 
 ### Deploying site to Neocities
 Start by creating a `.env` file, using the `.env-example` as a template. this file should contain your Neocities username/password. Once done, you can deploy the current site by simply running the following command:
-```
+```bash
 npm deploy
 ```
 
@@ -42,12 +45,12 @@ If you'd like to add additional pages, such as maybe a "post" page or something,
 
 If you do add more than just the `base.njk`, then it may be useful to pull parts of `base.njk` out to shared components that can be included. To include another page, you simply have to do this:
 
-```
+```njk
 {% include "components/header.njk" %}
 ```
 
 So, making the `base.njk` more generic might be something like this:
-```
+```njk
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -103,6 +106,8 @@ You could then take that and create a new `post.njk` file which changes which th
 
 ### src/assets/
 This includes all asset files (CSS, JS, and images) you want to include in the site. This folder is copied directly into the built website.
+
+Your CSS file is located here at `src/assets/css/style.css`.
 
 ### src/posts/
 Currently unused, but this includes all posts you want to make. I've created this file and example post because you can actually use this as a sort of blog, where you could have separate posts in here, tagged with the `tags` keyword at the top. You can then include the posts on your page and link to them. This would make it more similar to a blog.
