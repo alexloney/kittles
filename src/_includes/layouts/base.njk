@@ -34,7 +34,6 @@
             <h3 class="sideheaders">Navigate</h3>
             <div class="sidebox">
                 <ul>
-                
                     {% for item in site.nav %}
                       <li><a href="{{ item.url }}">{{ item.label }}</a></li>
                     {% endfor %}
@@ -57,71 +56,49 @@
       </div>
 
       <!-- Middle content -->
-                <div class="boxes main">
-                {{ content | safe }}
-                </div>
+      <div class="boxes main">
+        {{ content | safe }}
+      </div>
 
       <!-- Right sidebar -->
-                <div class="boxes sidebar2 sidebars">
+      <div class="boxes sidebar2 sidebars">
 
-                    <!-- SIDEBAR RIGHT BOX 1 -->
-                    <h3 class="sideheaders">Her Stats</h3>
-                    <div class="sidebox">
-                        <img src="https://graphic.neocities.org/kitten19.gif" style="opacity:0.9;">
-                        <img src="https://graphic.neocities.org/kitten15.gif" style="opacity:0.9;">
-                        <img src="https://graphic.neocities.org/kitten40.gif" style="opacity:0.9;">
-                        <p><b>Born:</b> Somewhere between September 2007 and April 2008</p>
-                        <p><b>Weight:</b> Always a Smol bean. Never hit 10lbs</p>
-                        <p><b>Color:</b> Calico Tabby perfection</p>
+        <!-- SIDEBAR RIGHT BOX 1 -->
+        <h3 class="sideheaders">Her Stats</h3>
+        <div class="sidebox">
+          <img src="https://graphic.neocities.org/kitten19.gif" style="opacity:0.9;">
+          <img src="https://graphic.neocities.org/kitten15.gif" style="opacity:0.9;">
+          <img src="https://graphic.neocities.org/kitten40.gif" style="opacity:0.9;">
+          <p><b>Born:</b> Somewhere between September 2007 and April 2008</p>
+          <p><b>Weight:</b> Always a Smol bean. Never hit 10lbs</p>
+          <p><b>Color:</b> Calico Tabby perfection</p>
+          <p><b>Number of Spots?</b> Yes.</p>
+          <p><b>Final Day in the Sun: </b> July 8 2026</p>
+        </div>
 
-                        <p><b>Number of Spots?</b> Yes.</p>
+        <!-- SIDEBAR RIGHT BOX 2 -->
+        <h3 class="sideheaders">Humans Info</h3>
+        <div class="sidebox">
+          <p>A'ledyn Spent over 15 of Kittles wonderful years with her, giving her love and affection and taking her as his personal familiar in magic. </p>
+          <p>Alice met her when she was already a rather old lady at 11 or 12ish. Alice loved her very much and helped her stay alive into her very senior years with unwavering devotion.</p>
+        </div>
 
+        <!-- SIDEBAR RIGHT BOX 3 -->
+        <h3 class="sideheaders">Links</h3>
+        <div class="sidebox">
+          <img src="https://kopawz.neocities.org/stamphoard/stamps2/nekoatsume.gif" style="opacity:0.9;">
+          <img src="https://64.media.tumblr.com/b199db6b1fc9cca1822f3de09caebde0/4f91c9b5f45da823-64/s100x200/4d30ea0957f876a69ab6071fa12a44de8bc2136e.gifv" style="opacity:0.9;">
+        </div>
 
-                        <p><b>Final Day in the Sun: </b> July 8 2026</p>
-                    </div>
-
-                    <!-- SIDEBAR RIGHT BOX 2 -->
-                    <h3 class="sideheaders">Humans Info</h3>
-                    <div class="sidebox">
-                        <p>A'ledyn Spent over 15 of Kittles wonderful years with her, giving her love and affection and taking her as his personal familiar in magic. </p>
-                        <p>Alice met her when she was already a rather old lady at 11 or 12ish. Alice loved her very much and helped her stay alive into her very senior years with unwavering devotion.</p>
-                    </div>
-
-                    <!-- SIDEBAR RIGHT BOX 3 -->
-                    <h3 class="sideheaders">Links</h3>
-                    <div class="sidebox">
-                        <img src="https://kopawz.neocities.org/stamphoard/stamps2/nekoatsume.gif" style="opacity:0.9;">
-                        <img src="https://64.media.tumblr.com/b199db6b1fc9cca1822f3de09caebde0/4f91c9b5f45da823-64/s100x200/4d30ea0957f876a69ab6071fa12a44de8bc2136e.gifv" style="opacity:0.9;">
-                    </div>
-
-                    <!-- SIDEBAR RIGHT BOX 4 -->
-                    <h3 class="sideheaders">Hitbar</h3>
-                    <div class="sidebox">
-                        <script type="text/javascript" src="https://counter.websiteout.com/js/11/0/0/1"></script>
-                    </div>
-
-                </div>
+        <!-- SIDEBAR RIGHT BOX 4 -->
+        <h3 class="sideheaders">Hitbar</h3>
+        <div class="sidebox">
+          <script type="text/javascript" src="https://counter.websiteout.com/js/11/0/0/1"></script>
+        </div>
+      </div>
     </div>
   </div>
-
   
   <div id="credit"><a href="https://repth.neocities.org/index.html">©repth</a></div>
-  <!-- 
-  <header>
-    <nav>
-    {% for item in collections.nav %}
-      <a href="{{ item.url }}">{{ item.data.title }}</a>
-    {% endfor %}
-    </nav>
-  </header>
-
-  <main>
-    {{ content | safe }}
-  </main>
-
-  <footer>
-    <p>&copy; 2026 {{ site.name }}</p>
-  </footer>
-  -->
 </body>
 </html>
