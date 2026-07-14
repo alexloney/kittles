@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "eleventy --serve",
-    "build": "eleventy"
+    "build": "eleventy",
+    "upload": "node scripts/upload.js",
+    "deploy": "npm run build && npm run upload"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +16,8 @@
   "type": "commonjs",
   "devDependencies": {
     "@11ty/eleventy": "^3.1.6",
-    "luxon": "^3.7.2"
+    "dotenv": "^17.4.2",
+    "luxon": "^3.7.2",
+    "neocities": "^0.0.3"
   }
 }
