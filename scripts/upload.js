@@ -17,8 +17,8 @@ function getFiles(dir) {
       files.push(...getFiles(fullPath));
     } else {
       files.push({
-        name: fullPath.replace('_site/', ''),  // Neocities path
-        path: fullPath                         // Local path
+        name: path.relative('_site', fullPath).replace(/\\/g, '/'),  // Neocities path with forward slashes
+        path: fullPath                                               // Local path
       });
     }
   }

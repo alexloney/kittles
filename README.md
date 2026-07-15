@@ -35,7 +35,7 @@ npm start
 ### Deploying site to Neocities
 Start by creating a `.env` file, using the `.env-example` as a template. this file should contain your Neocities username/password. Once done, you can deploy the current site by simply running the following command:
 ```bash
-npm deploy
+npm run deploy
 ```
 
 ## Structure of the site contents
