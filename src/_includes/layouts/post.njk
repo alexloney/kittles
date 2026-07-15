@@ -30,7 +30,12 @@
 
       <!-- Middle content -->
       <div class="boxes main">
-        {{ content | safe }}
+        <div class="section">
+            <h3 class="middleheaders">{{ title }}</h3>
+            <img src= "https://pixelsafari.neocities.org/dividers/sparkles4.gif" style="opacity:.09;">
+            <p>{{ content | safe }}</p>
+            <img src= "https://pixelsafari.neocities.org/dividers/sparkles4.gif" style="opacity:.09;">
+        </div>
       </div>
 
       <!-- Right sidebar -->

@@ -11,6 +11,14 @@
    ```bash
    npm install
    ```
+   If you get an error "UnauthorizedAccess", you may need to enable script execution.
+   1. Open PowerShell as Administrator. (Click your Windows Start menu, type PowerShell, right-click it, and select Run as administrator.)
+   2. Change the Execution Policy
+      ```powershell
+      Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+      ```
+   3. Confirm the Change. Press 'Y'
+   4. Restart the terminal
 
 ### Optional
 1. I prever to use [VS Code](https://code.visualstudio.com/) as my editor. If using VS Code, I'd recommend the following extensions to make your life easier:

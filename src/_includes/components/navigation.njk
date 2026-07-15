@@ -1,0 +1,11 @@
+
+<div class="nav">
+    <h3 class="sideheaders">Navigate</h3>
+    <div class="sidebox">
+        <ul>
+            {% for item in collections.nav %}
+                <li><a href="{{ item.url }}">{{ item.data.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
