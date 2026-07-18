@@ -155,6 +155,24 @@ This is a bit more difficult to do from Neocities. You'd need an external host/l
 
 ## Simple Git Overview
 
+### Setting up git for VS Code
+To get git to work with VS Code, we'll need to update your SSH key for git
+to properly find/use it. To do this, open the `PuTTYgen` program and click
+"Load". Then select your "id_rsa.ppk" file, it should be located at "C:\Users\JD\.ssh".
+
+Next, select Conversions -> Export OpenSSH key, save the file as "id_rsa" in
+the same directory as above (C:\Users\JD\.ssh)
+
+Finaly, create a new file named "config" in the same directory (C:\Users\JD\.ssh) with these contents:
+```
+Host github.com
+    User git
+    Hostname github.com
+    IdentityFile ~/.ssh/id_rsa
+```
+
+VS Code should now be able to use your SSH key and thus properly authenticate to github.
+
 ### Saving your changes to git
 Here are some simple instructions for using VS Code Git and Github to save your changes.
 
