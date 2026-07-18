@@ -1,0 +1,9 @@
+{
+  "watch": ["src/posts/**/*.md", ".eleventy.js", "src/_data/**/*"],
+  "ext": "md,js,json",
+  "ignore": ["_site/**", "node_modules/**"],
+  "events": {
+    "restart": "echo '[nodemon] Restarting due to file changes...'"
+  },
+  "delay": "500"
+}
