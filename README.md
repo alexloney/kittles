@@ -169,7 +169,11 @@ In VS Code, this is in the lower panel and has a little upward pointing arrow. T
 
 There's also a shortcut of steps 2 and 3, where you can "Commit & Push" at once, which will take your commit and push it to the remote Github repository at the same time.
 
+There's also a "Sync Changes" button that appears when changes are ready to be synced (pushed or pulled) that you can use.
+
 ### Fetching remote changes
 If there have been changes to your github repository outside of what you've worked on (such as if I've made changes for you), you can pull them locally. In VS Code, this is the downward arrow in the bottom panel that says "Pull" when you hover over it.
 
 Pulling takes all of the remote respository changes and saves them locally to your system, updating your local files to match the remote files.
+
+There's also a "Sync Changes" button that appears when changes are ready to be synced (pushed or pulled) that you can use.
