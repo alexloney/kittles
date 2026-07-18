@@ -152,3 +152,24 @@ Currently the photo storage is simply done through the Neocities website. Howeve
 
 ### User uploads
 This is a bit more difficult to do from Neocities. You'd need an external host/location for people to upload to, then have the Neocities site pull content from there.
+
+## Simple Git Overview
+
+### Saving your changes to git
+Here are some simple instructions for using VS Code Git and Github to save your changes.
+
+#### 1. Stage your changes
+In VS Code, you can do this with the little "+" icon, this tells Git that you want this change to be part of your next commit
+
+#### 2. Commit your changes
+In VS Code, this is the "Commit" button, this will take all changes that have been staged and save them to your local git repository. At this point, all the changes are local and isolated to just your computer.
+
+#### 3. Push your changes to Github
+In VS Code, this is in the lower panel and has a little upward pointing arrow. This will take all commits you've made locally and push them to Github, saving them outside of your computer.
+
+There's also a shortcut of steps 2 and 3, where you can "Commit & Push" at once, which will take your commit and push it to the remote Github repository at the same time.
+
+### Fetching remote changes
+If there have been changes to your github repository outside of what you've worked on (such as if I've made changes for you), you can pull them locally. In VS Code, this is the downward arrow in the bottom panel that says "Pull" when you hover over it.
+
+Pulling takes all of the remote respository changes and saves them locally to your system, updating your local files to match the remote files.
