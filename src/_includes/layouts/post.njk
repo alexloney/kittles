@@ -34,6 +34,26 @@
             <h3 class="middleheaders">{{ title }}</h3>
             <img src= "https://pixelsafari.neocities.org/dividers/sparkles4.gif" style="opacity:.09;">
             <p>{{ content | safe }}</p>
+
+            {% set currentIndex = -1 %}
+            {% for post in collections.lifestory %}
+              {% if post.url == page.url %}
+                {% set currentIndex = loop.index0 %}
+              {% endif %}
+            {% endfor %}
+
+            {% if currentIndex >= 0 %}
+              {% if currentIndex > 0 %}
+                {% set previousPost = collections.lifestory[currentIndex - 1] %}
+                <p><a href="{{ previousPost.url }}">Previous: {{ previousPost.data.title }}</a></p>
+              {% endif %}
+
+              {% if currentIndex + 1 < collections.lifestory.length %}
+                {% set nextPost = collections.lifestory[currentIndex + 1] %}
+                <p><a href="{{ nextPost.url }}">Next: {{ nextPost.data.title }}</a></p>
+              {% endif %}
+            {% endif %}
+
             <img src= "https://pixelsafari.neocities.org/dividers/sparkles4.gif" style="opacity:.09;">
         </div>
       </div>
