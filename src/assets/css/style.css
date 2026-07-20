@@ -9,6 +9,10 @@ body{
     background-color: #8f6c49;
     font-family: 'Questrial', sans-serif;
     color: #4a3432;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .container{
